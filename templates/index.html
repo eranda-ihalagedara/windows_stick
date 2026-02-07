@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Windows Remote</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="trackpad-area">
+            <div id="trackpad">
+                <span id="instruction">Touch & Move to Control Mouse</span>
+            </div>
+            <div id="scroll-strip">
+                <span>Scroll</span>
+            </div>
+        </div>
+
+        <div id="mouse-buttons">
+            <button id="btn-left" class="mouse-btn">L</button>
+            <button id="btn-right" class="mouse-btn">R</button>
+        </div>
+
+
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>
