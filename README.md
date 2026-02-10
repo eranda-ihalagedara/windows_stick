@@ -1,15 +1,16 @@
-# Windows Remote Stick
+# Windows Remote Stick (Professional Edition)
 
-A lightweight, Python-based remote control application that transforms your mobile device into a wireless trackpad for your Windows PC.
+A robust, Python-based remote control application that transforms your mobile device into a wireless trackpad for your Windows PC. Now featuring a graphical user interface and simplified connection via QR code.
 
 ## 🚀 Features
 
+- **GUI Control Panel**: Easy-to-use desktop interface to start/stop the server.
+- **QR Code Connection**: Scan a QR code to instantly connect your mobile device.
 - **Large Trackpad Area**: Dedicated space for smooth mouse movement control.
 - **Mouse Buttons**: Large Left (L) and Right (R) click buttons.
 - **Scroll Strip**: Vertical strip for easy page scrolling.
 - **Wi-Fi Connectivity**: Connect over your local network without cables.
 - **Real-time Interaction**: Powered by Flask-SocketIO for low-latency control.
-- **Connection Logs**: Server-side notifications when clients connect or disconnect.
 
 ## 📋 Prerequisites
 
@@ -31,16 +32,15 @@ A lightweight, Python-based remote control application that transforms your mobi
 
 ## 🎮 Usage
 
-1. Start the server:
+1. Start the application:
    ```bash
-   python server.py
+   python run.py
    ```
 
-2. Look at the console output to find the local IP address (e.g., `http://192.168.1.5:5000`).
-
-3. Open the browser on your mobile device and navigate to that address.
-
-4. **Control your PC**:
+2. The **Windows Remote Stick** window will open.
+3. Click **Start Server**.
+4. Scan the **QR Code** with your mobile device, or manually enter the URL displayed.
+5. **Control your PC**:
    - **Move**: Touch and drag on the trackpad area.
    - **Click**: Tap the 'L' or 'R' buttons.
    - **Scroll**: Use the vertical 'Scroll' strip on the right side of the trackpad.
@@ -48,8 +48,9 @@ A lightweight, Python-based remote control application that transforms your mobi
 ## 🧰 Built With
 
 - **Backend**: [Flask](https://flask.palletsprojects.com/), [Flask-SocketIO](https://flask-socketio.readthedocs.io/), [pynput](https://pynput.readthedocs.io/)
-- **Frontend**: HTML5, CSS3 (Flexbox), Vanilla JavaScript
-- **Communication**: WebSockets via Socket.io
+- **Frontend**: HTML5, CSS3, Vanilla JavaScript
+- **GUI**: Tkinter, [Pillow](https://python-pillow.org/)
+- **Utilities**: [qrcode](https://github.com/lincolnloop/python-qrcode)
 
 ## 📝 License
 

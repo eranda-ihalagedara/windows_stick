@@ -1,4 +1,6 @@
-flask
-flask-socketio
-pynput
-eventlet
+flask==3.0.0
+flask-socketio==5.3.6
+pynput==1.7.6
+qrcode==7.4.2
+Pillow
+eventlet==0.33.3
